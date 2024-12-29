@@ -36,7 +36,7 @@ const App = () => {
       <div className="document-container">
         <iframe
           ref={iframeRef}
-          src={`/documents/version-${version}.html`}
+          src={`${process.env.PUBLIC_URL}/documents/version-${version}.html`}
           title={`Document Version ${version}`}
           className="document-viewer"
         />
